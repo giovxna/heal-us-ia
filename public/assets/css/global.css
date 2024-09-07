@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --header-height: 3.5rem;
+
+    /* cores */
+    --hue: 152;
+    --green: #164a47;
+    --light-green: #2c938c;
+    --dark-green: #0a6862;
+    --black: #202020;
+    --bg: #fafafa;
+    --title: #202020;
+    --text: #868686;
+
+    /* tamanhos da fonte */
+    --body-font: 'Poppins', sans-serif;
+    --big-font-size: 2rem;
+    --h1: 1.5rem;
+    --h2: 1.25rem;
+    --h3: 1rem;
+    --normal: 0.938rem;
+    --small: 0.813rem;
+    --smaller: 0.75rem;
+
+    /* margin */
+    --m1: 0.5rem;
+    --m2: 0.75rem;
+    --m3: 1rem;
+    --m4: 1.5rem;
+    --m5: 2rem;
+    --m6: 2.5rem;
+
+    /* z-index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 2.7rem;
+        --h1: 2.25rem;
+        --h2: 1.5rem;
+        --h3: 1.25rem;
+        --normal: 1rem;
+        --small: 0.875rem;
+        --smaller: 0.813rem;
+    }
+}
+
+.section {
+    padding: 1rem 0 1rem;
+}
+
+.section-title,
+.section-title-center {
+    font-size: var(--h2);
+    margin-bottom: var(--m5);
+    line-height: 140%;
+}
+
+.section-title-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 968px;
+    margin-left: var(--m4);
+    margin-right: var(--m4);
+}
+
+.grid {
+    display: grid;
+}
+
+.main {
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal);
+}
+
+body {
+    background-color: var(--bg);
+    margin: var(--header-height) 0 0 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title);
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-weight: 500;
+    color: var(--text);
+}
+
+/* pré-definições de todos os botões */
+.button {
+    display: inline-block;
+    background-color: var(--green);
+    color: #fff;
+    font-weight: 700;
+    padding: 1rem 1.75rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: var(--dark-green);
+}
+
+.button-flex {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
