@@ -29,15 +29,3 @@ A aplicação possui uma interface intuitiva que permite que o usuário faça pe
 - **Backend:** O backend armazena a chave da API em um arquivo `.env` e a fornece ao frontend através de uma rota dedicada. Isso permite que a chave seja mantida segura, evitando a exposição direta no código frontend.
 - **Integração com a API Gemini:** O sistema envia um prompt com instruções específicas para a IA HealUs e recebe uma resposta, que é apresentada ao usuário.
 
-### Tecnologias
-
-   - **HTML5**
-   - **CSS3**
-   - **JavaScript**
-   - **Fetch API**
-   - **Node.js**
-   - **Express.js**
-   - **dotenv**
-   - **Gemini API**
-   - **.env**
-
